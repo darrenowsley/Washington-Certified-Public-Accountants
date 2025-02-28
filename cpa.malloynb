@@ -42,6 +42,13 @@ run: cpa -> {
         limit: 5
     }
 
+    nest: `The number of CPA licenses issued in Washington State has fluctuated over the past decade, showing both growth and decline in different years. In 2023, 1,721 licenses were issued, reflecting a decrease of 64 from the previous year. This follows a peak in 2022, where 1,828 licenses were issued, marking a notable increase of 107 from 2021. The year 2021 saw 1,424 new licenses, a significant rise from 2020, when only 1,250 were issued.` is {
+        group_by: Issued.year
+        aggregate: License
+        calculate: `Annual Difference` is (License - lag(License))
+        where: Status = 'Licensed to practice public accounting'        
+    }
+
     nest: `The average tenure of Certified Public Accountants that have disciplinary board orders or are currently suspended from practice. There have been 184 CPAs in Washington state thate have had their license revoked or suspeneded.` is {
         aggregate: `Total CPAs` is License, `Average Years of Service` is YearsInService
         where: Status = 'Licensed to practice Revoked per Board Order'
