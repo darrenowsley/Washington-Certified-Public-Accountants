@@ -55,14 +55,14 @@ This repository contains two Malloy code files:
 2. How many CPAs have licenses that have expired or lapsed?
 3. What is the distribution of CPAs across different states and countries?
 
-<img src="./Images/percent.png">
+<img src="./Images/percent.png" style="max-width:50%">
 
 4. Which cities have the highest concentration of CPAs?
 5. What is the average duration between the license issue and expiration dates?
 6. How many CPAs have disciplinary board orders?
 7. What is the average duration of a CPA license compared to the average duration of a suspended or revoked license.
 
-<img src="./Images/revoked.png">
+<img src="./Images/revoked.png" style="max-width:50%">
 
 ## Usage Instructions
 - Load the dataset using a CSV-compatible tool (e.g., Excel, Pandas in Python).
