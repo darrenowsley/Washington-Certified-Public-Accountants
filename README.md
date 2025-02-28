@@ -3,6 +3,8 @@
 ## Overview
 This dataset contains records of Certified Public Accountants (CPAs) in Washington State, including their license details, geographic information, and status. It provides insights into active and expired licenses, regional distributions, and regulatory compliance.
 
+<img src="./Images/trend.png" style="width: 400px">
+
 ## Code
 This repository contains two Malloy code files:
 
