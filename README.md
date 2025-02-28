@@ -42,7 +42,7 @@ This repository contains two Malloy code files:
 ## Questions for Analysis
 1. What percentage of CPAs have an active license?
 2. How many CPAs have licenses that have expired or lapsed?
-<img src="images/percent.png">
+<img src="./images/percent.png">
 3. What is the distribution of CPAs across different states and countries?
 4. Which cities have the highest concentration of CPAs?
 5. What is the average duration between the license issue and expiration dates?
