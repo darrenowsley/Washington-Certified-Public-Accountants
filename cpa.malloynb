@@ -1,0 +1,67 @@
+>>>malloy
+import "wacpa.malloy"
+>>>malloy
+# dashboard
+run: cpa -> {
+    aggregate: `Summary of individuals who hold, or have held credentials from the Washington State Board of Accountancy. The Board of Accountancy provides this data to aid in verifying credentials and disciplinary history.` is License
+ 
+    # line_chart
+    nest: `CPA Trend: The number of new CPA licenses has been increasing steadily since 2016. The highest number of licenses was issued in 2022 (1,867 licenses). In 2023 and 2024, issuance remained high at 1,741 and 1,794, respectively. So far in 2025, 522 licenses have been issued (indicating partial data for the year).` is {
+        group_by: `Year Issued` is Issued.year
+        aggregate: License
+    }
+
+    # bar_chart
+    nest: `The data indicates that there are 24,368 individuals licensed to practice public accounting. However, a significant number of licenses have lapsed, with 11,125 lapsed licensees and 4,564 lapsed certificate holders. Additionally, there are 4,734 retired licensees and 1,926 retired certificate holders. A smaller group, 653, holds an inactive CPA license, meaning they are not licensed to practice. There are also 154 individuals suspended per Board Order and 30 whose licenses have been revoked. Other categories include 107 individuals who converted to CPA, 102 non-CPAs registered as owners in a Washington CPA firm, 89 with lapsed registrations, and 70 deceased. This data highlights the various statuses of accounting professionals in Washington.` is {
+        group_by: Status
+        aggregate: License
+    }
+
+    nest: `In Washington State, 50.85% of CPAs are licensed to practice public accounting, totaling 24,368 individuals. However, 23.21% of licenses have lapsed, representing 11,125 individuals. Retired licensees make up 9.88% (4,734), while lapsed certificate holders account for 9.52% (4,564). Retired certificate holders constitute 4.02% (1,926). A smaller group, 1.36% (653), holds an inactive CPA license, meaning they are not licensed to practice. Additionally, 0.32% (154) are suspended per Board Order, and 0.06% (30) have had their licenses revoked. Other categories include 0.22% (107) who converted to CPA, 0.21% (102) non-CPAs registered as owners in a Washington CPA firm, 0.19% (89) with lapsed registrations, and 0.15% (70) deceased.` is {
+        group_by: Status
+        aggregate: License 
+        # percent
+        `%` is all(License, Status) / all(License)        
+    }
+
+    nest: `Top 10 Cities: Focusing on cities, Seattle, WA, has the highest number of licensed CPAs (5,733), followed by Bellevue, WA (1,714), and Spokane, WA (1,357). Outside the US, Tokyo, Japan, has 2,189 licensed CPAs, and Seoul, South Korea, has 1,360. This data highlights the distribution and status of accounting professionals in Washington State and key international cities.` is {
+        group_by: City_Clean, State_Clean, Country
+        aggregate: License  
+        limit: 10       
+    }
+
+    nest: `The average tenure of Certified Public Accountant is just over 15 years while the longest active CPA is Edward Rich at almost 68 years!` is {
+        aggregate: `Total CPAs` is License, `Average Years of Service` is YearsInService
+    }
+
+    nest: `Top 5 CPAs currently licensed to practice with the longest tenure.` is {
+        group_by: Name, Status, Issued, Expires
+        aggregate: `Years of Service` is YearsInService
+        where: Status = 'Licensed to practice public accounting'
+        order_by: `Years of Service` desc
+        limit: 5
+    }
+
+    nest: `The average tenure of Certified Public Accountants that have disciplinary board orders or are currently suspended from practice. There have been 184 CPAs in Washington state thate have had their license revoked or suspeneded.` is {
+        aggregate: `Total CPAs` is License, `Average Years of Service` is YearsInService
+        where: Status = 'Licensed to practice Revoked per Board Order'
+        or Status = 'Suspended per Board Order'
+    }
+
+    nest: `Top 5 CPAs that have revoked or suspended licenses with the longest tenure.` is {
+        group_by: Name, Status, Issued, Expires
+        aggregate: `Years of Service` is YearsInService
+        where: Status = 'Licensed to practice Revoked per Board Order'
+        or Status = 'Suspended per Board Order'
+        order_by: `Years of Service` desc
+        limit: 5
+    }
+}
+>>>malloy
+run: cpa -> {
+        group_by: Name, Status, Issued, Expires
+        aggregate: YearsInService
+        where: Status = 'Licensed to practice Revoked per Board Order'
+        or Status = 'Suspended per Board Order'
+       order_by: YearsInService desc
+}
