@@ -9,9 +9,9 @@ This repository contains two Malloy code files:
     wacpa.malloy, sources all the data tables for the data analysis portion of this repository.
     cpa.malloynb, performs the analysis piece of the data provided by the Washington State Data Portal.
 
-## Malloy is an open source data language, and a decent alternative to pandas, ggplot, and SQL!
+#### Malloy is an open source data language, and a decent alternative to pandas, ggplot, and SQL!
 
-## How see the analysis yourself
+#### How see the analysis yourself
 
 ## Are you logged into github? Just press the period key right now. Then do the following:
 1. Step 1 - Press allow 	
