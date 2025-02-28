@@ -55,7 +55,7 @@ This repository contains two Malloy code files:
 2. How many CPAs have licenses that have expired or lapsed?
 3. What is the distribution of CPAs across different states and countries?
 
-<img src="./Images/percent.png" style="max-width:50%">
+<img src="./Images/percent.png" style="width: 300px">
 
 4. Which cities have the highest concentration of CPAs?
 5. What is the average duration between the license issue and expiration dates?
