@@ -49,7 +49,7 @@ run: cpa -> {
         where: Status = 'Licensed to practice public accounting'        
     }
 
-    nest: `The average tenure of Certified Public Accountants that have disciplinary board orders or are currently suspended from practice. There have been 184 CPAs in Washington state thate have had their license revoked or suspeneded.` is {
+    nest: `The average tenure of Certified Public Accountants that have disciplinary board orders or are currently suspended from practice. There have been 184 CPAs in Washington state that have had their license revoked or suspended.` is {
         aggregate: `Total CPAs` is License, `Average Years of Service` is YearsInService
         where: Status = 'Licensed to practice Revoked per Board Order'
         or Status = 'Suspended per Board Order'
