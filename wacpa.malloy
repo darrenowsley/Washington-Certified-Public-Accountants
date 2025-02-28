@@ -1,5 +1,8 @@
 source: cpa is duckdb.table('cpa.csv') extend {
     rename: Issued is `Original Issue Date`
+    rename: Expires is `Expiration Date`
+
+    dimension: Name is concat(`First Name`,' ',`Last Name`)
     dimension: City_Clean is 
         pick "Unknown" when City is null
         else ucase!(City)
@@ -10,4 +13,5 @@ source: cpa is duckdb.table('cpa.csv') extend {
     
     measure: License is count(`License Number`)
     measure: Percentage is License / all(License)
+    measure: YearsInService is avg(days(Issued to Expires) / 365)
 }
