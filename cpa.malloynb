@@ -64,11 +64,3 @@ run: cpa -> {
         limit: 5
     }
 }
->>>malloy
-run: cpa -> {
-      group_by: Issued.year
-     aggregate: License
-     calculate: jump is (License - lag(License))
-     where: Status = 'Licensed to practice public accounting'
-      limit: 5000
-}
