@@ -45,8 +45,8 @@ Once on Github, click Shift + period this will load the web editor. Then install
 ## Dataset Information
 - Source: Washington State CPA Licensing Board
 - Date of Extraction: February 27, 2025
-- File Format**: CSV
-- Total Records**: 47,922
+- File Format: CSV
+- Total Records: 47,922
 - Columns:
 
   | Column Name          | Description |
