@@ -1,4 +1,7 @@
-# Washington State Certified Public Accountants Dataset
+![License](https://img.shields.io/github/license/darrenowsley/Washington-Certified-Public-Accountants)
+![Stars](https://img.shields.io/github/stars/darrenowsley/Washington-Certified-Public-Accountants)
+![Issues](https://img.shields.io/github/issues/Washington-Certified-Public-Accountants)
+## Washington State Certified Public Accountants
 
 ## Overview
 This dataset comprises records of Certified Public Accountants (CPAs) in Washington State, detailing their licensing information, personal identifiers, and geographic locations. It contains 47,922 entries, each representing an individual CPA with attributes such as first name, last name, middle name, suffix, preferred name, city, state, and country. Additionally, the dataset includes license-specific details such as license number, original issue date, expiration date, and status. Some records also contain board orders and other administrative annotations.
