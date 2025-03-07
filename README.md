@@ -30,7 +30,7 @@ This dataset can serve as a valuable resource for regulatory boards, professiona
   - 📝 `CPA Views Quick Look.malloynb`: Views of the dataset to utilize for quick analysis.
   - 🏦 `CPA Overview.malloynb`: Dashboard of metrics and graphs for an executive view.
 
-# How to Open a Shared GitHub File and Run Malloy Code
+## How to Open a Shared GitHub File and Run Malloy Code
 Click on the (https://github.com/darrenowsley/Washington-Certified-Public-Accountants.git) provided to access the shared repository or file. 
 
 Once on Github, click Shift + period this will load the web editor. Then install the malloy extension. See images below for reference:
