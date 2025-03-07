@@ -1,7 +1,3 @@
-![License](https://img.shields.io/github/license/darrenowsley/Washington-Certified-Public-Accountants)
-![Stars](https://img.shields.io/github/stars/darrenowsley/Washington-Certified-Public-Accountants)
-![Issues](https://img.shields.io/github/issues/Washington-Certified-Public-Accountants)
-
 ## Washington State Certified Public Accountants
 
 ## Overview
