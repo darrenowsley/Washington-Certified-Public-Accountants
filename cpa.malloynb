@@ -25,7 +25,7 @@ run: cpa -> {
     }
 
     nest: `Top 10 Cities: Focusing on cities, Seattle, WA, has the highest number of licensed CPAs (5,733), followed by Bellevue, WA (1,714), and Spokane, WA (1,357). Outside the US, Tokyo, Japan, has 2,189 licensed CPAs, and Seoul, South Korea, has 1,360. This data highlights the distribution and status of accounting professionals in Washington State and key international cities.` is {
-        group_by: City_Clean, Clean_State, Country
+        group_by: `City` is City_Clean, `State` is Clean_State, Country
         aggregate: License  
         limit: 10       
     }
@@ -63,4 +63,8 @@ run: cpa -> {
         order_by: `Years of Service` desc
         limit: 5
     }
+}
+>>>malloy
+run: cpa -> {
+    group_by: `License Number`
 }
