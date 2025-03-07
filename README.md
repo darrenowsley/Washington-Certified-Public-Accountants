@@ -3,7 +3,12 @@
 ## Overview
 This dataset comprises records of Certified Public Accountants (CPAs) in Washington State, detailing their licensing information, personal identifiers, and geographic locations. It contains 47,922 entries, each representing an individual CPA with attributes such as first name, last name, middle name, suffix, preferred name, city, state, and country. Additionally, the dataset includes license-specific details such as license number, original issue date, expiration date, and status. Some records also contain board orders and other administrative annotations.
 
-<img src="./Images/summary.png" style="width: 400px">
+<table>
+<tr>
+<td><img src="./Images/summary.png" style="width: 400px"></td>
+<td><img src="./Images/average.png" style="width: 400px"></td>
+</tr>
+<table>
 
 The dataset presents a comprehensive view of CPA licensing trends across different regions, allowing for insights into license validity, geographical distribution, and professional status. While most records contain essential details, some fields have missing values, particularly in the middle name, state, and preferred name columns. This data set includes CPA licensed data from 1903 to 2025.
 
