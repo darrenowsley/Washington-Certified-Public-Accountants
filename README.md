@@ -28,7 +28,7 @@ This dataset can serve as a valuable resource for regulatory boards, professiona
 - **📄 Analysis Scripts**:
   - 📄 `cpa.malloy`: Has all the sources used in this repository and views that can be used to filter for querying. 
   - 📝 `CPA Views Quick Look.malloynb`: Views of the dataset to utilize for quick analysis.
-  - 🏦 `CPA Overview.malloynb`: Dashboard of metrics and graphs for an execute view.
+  - 🏦 `CPA Overview.malloynb`: Dashboard of metrics and graphs for an executive view.
 
 # How to Open a Shared GitHub File and Run Malloy Code
 Click on the (https://github.com/darrenowsley/Washington-Certified-Public-Accountants.git) provided to access the shared repository or file. 
