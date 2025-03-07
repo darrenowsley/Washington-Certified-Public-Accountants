@@ -1,0 +1,47 @@
+source: cpa is duckdb.table('cpa.csv') extend {
+    rename: Issued is `Original Issue Date`
+    rename: Expires is `Expiration Date`
+
+    dimension: Name is concat(`First Name`,' ',`Last Name`)
+    dimension: City_Clean is 
+        pick "Unknown" when City is null
+        else ucase!(City)
+    dimension: Clean_State is 
+        pick "Unknown" when City is null and State is null
+        pick "Non US" when State is null
+        else State
+    
+    measure: License is count(`License Number`)
+    measure: Percentage is License / all(License)
+    measure: YearsInService is avg(days(Issued to Expires) / 365)
+
+    view: cpa_by_status is {
+        group_by: `CPA Status` is Status
+        aggregate: License
+        limit: 500000
+    }
+
+    view: cpa_by_city is {
+        group_by: `City` is City_Clean
+        aggregate: License
+        limit: 500000
+    }
+
+    view: cpa_by_country is {
+        group_by: `Country` is Country
+        aggregate: License
+        limit: 500000
+    }
+
+    view: cpa_active_status is {
+        group_by: `CPA Status` is Status
+        aggregate: License
+        where: Status = 'Licensed to practice public accounting'
+        limit: 500000
+    }
+
+    view: cpa_average_years_of_service is {
+        group_by: Status
+        aggregate: YearsInService
+    }
+}

@@ -1,5 +1,5 @@
 >>>malloy
-import "wacpa.malloy"
+import "cpa.malloy"
 >>>malloy
 # dashboard
 run: cpa -> {
