@@ -1,0 +1,17 @@
+>>>malloy
+import "cpa.malloy"
+
+#CPA by Status
+run: cpa ->  cpa_by_status
+
+#CPA by City
+run: cpa ->  cpa_by_city
+
+#CPA by Country
+run: cpa ->  cpa_by_country
+
+#CPA by Active Status
+run: cpa ->  cpa_active_status
+
+#CPA Average Years of Service
+run: cpa ->  cpa_average_years_of_service

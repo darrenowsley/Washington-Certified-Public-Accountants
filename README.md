@@ -20,16 +20,18 @@ The motivation behind analyzing this dataset is to gain insights into CPA licens
 
 This dataset can serve as a valuable resource for regulatory boards, professional associations, and researchers interested in workforce analytics, credential verification, and the broader impact of licensing regulations on the accounting profession. Understanding these patterns can help improve policy decisions, streamline licensing processes, and ensure better oversight of CPA professionals.
 
-## Code
-This repository contains two Malloy code files:
+## Repository Contents
 
-    wacpa.malloy, sources all the data tables for the data analysis portion of this repository.
-    cpa.malloynb, performs the analysis piece of the data provided by the Washington State Data Portal.
+- **📊 Dataset**:
+  - 🗂️ `cpa.csv`: A dataset of Certified Public Accountants in the state of Washington.
+  
+- **📄 Analysis Scripts**:
+  - 📄 `cpa.malloy`: Has all the sources used in this repository and views that can be used to filter for querying. 
+  - 📝 `CPA Views Quick Look.malloynb`: Views of the dataset to utilize for quick analysis.
+  - 🏦 `CPA Overview.malloynb`: Dashboard of metrics and graphs for an execute view.
 
 # How to Open a Shared GitHub File and Run Malloy Code
-To explore the data and run the analyses:
-
-Click on the ((https://github.com/darrenowsley/Washington-Certified-Public-Accountants.git) provided to access the shared repository or file. 
+Click on the (https://github.com/darrenowsley/Washington-Certified-Public-Accountants.git) provided to access the shared repository or file. 
 
 Once on Github, click Shift + period this will load the web editor. Then install the malloy extension. See images below for reference:
 | **Step**   | **Image Preview** |
