@@ -83,9 +83,9 @@ Once on Github, click Shift + period this will load the web editor. Then install
 
 <table>
 <tr>
-<td><img src="./Images/city.png" style="width: 33%"></td>
-<td><img src="./Images/percent.png" style="width: 33%"></td>
-<td><img src="./Images/revoked.png" style="width: 400px"></td>
+<td><img src="./Images/city.png"></td>
+<td><img src="./Images/percent.png"></td>
+<td><img src="./Images/revoked.png"></td>
 </tr>
 <table>
 
