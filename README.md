@@ -26,6 +26,20 @@ This repository contains two Malloy code files:
     wacpa.malloy, sources all the data tables for the data analysis portion of this repository.
     cpa.malloynb, performs the analysis piece of the data provided by the Washington State Data Portal.
 
+# How to Open a Shared GitHub File and Run Malloy Code
+To explore the data and run the analyses:
+
+Click on the ((https://github.com/darrenowsley/Washington-Certified-Public-Accountants.git) provided to access the shared repository or file. 
+
+Once on Github, click Shift + period this will load the web editor. Then install the malloy extension. See images below for reference:
+| **Step**   | **Image Preview** |
+|--------|-----------|
+| `Step 1 - Press allow` | <img src="./Images/step1.png" width="50%"> |
+| `Step 2 - Click the Blocks, search for Malloy, install` | <img src="./Images/step2.png" width="50%"> |
+| `Step 3 - Click Trust` | <img src="./Images/step3.png" width="50%"> |
+| `Step 4 - Click a .malloynb file` | <img src="./Images/step4.png" width="50%"> |
+| `Step 5 - Press Run` | <img src="./Images/step5.png" width="50%"> |
+
 ## Dataset Information
 - **Source:** Washington State CPA Licensing Board
 - **Date of Extraction:** February 27, 2025
