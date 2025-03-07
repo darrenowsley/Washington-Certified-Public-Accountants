@@ -43,11 +43,11 @@ Once on Github, click Shift + period this will load the web editor. Then install
 | `Step 5 - Press Run` | <img src="./Images/step5.png" width="50%"> |
 
 ## Dataset Information
-- **Source**: Washington State CPA Licensing Board
-- **Date of Extraction**: February 27, 2025
-- **File Format**: CSV
-- **Total Records**: 47,922
-- **Columns**:
+- Source: Washington State CPA Licensing Board
+- Date of Extraction: February 27, 2025
+- File Format**: CSV
+- Total Records**: 47,922
+- Columns:
 
   | Column Name          | Description |
   |----------------------|-------------|
