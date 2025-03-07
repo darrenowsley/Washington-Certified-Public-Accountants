@@ -67,10 +67,10 @@ Once on Github, click Shift + period this will load the web editor. Then install
   | Board Order       | Disciplinary board order (if applicable) |
 
 ## Potential Use Cases
-- **Regulatory Compliance**: Identifying active and expired licenses.
-- **Geographic Analysis**: Understanding CPA distribution across regions.
-- **License Trends**: Analyzing issuance and expiration trends over time.
-- **Demographic Insights**: Common names and regional concentrations.
+- Regulatory Compliance: Identifying active and expired licenses.
+- Geographic Analysis: Understanding CPA distribution across regions.
+- License Trends: Analyzing issuance and expiration trends over time.
+- Demographic Insights: Common names and regional concentrations.
 
 ## Questions for Analysis
 1. What percentage of CPAs have an active license?
