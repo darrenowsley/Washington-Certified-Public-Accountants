@@ -3,16 +3,17 @@
 ## Overview
 This dataset comprises records of Certified Public Accountants (CPAs) in Washington State, detailing their licensing information, personal identifiers, and geographic locations. It contains 47,922 entries, each representing an individual CPA with attributes such as first name, last name, middle name, suffix, preferred name, city, state, and country. Additionally, the dataset includes license-specific details such as license number, original issue date, expiration date, and status. Some records also contain board orders and other administrative annotations.
 
-The dataset presents a comprehensive view of CPA licensing trends across different regions, allowing for insights into license validity, geographical distribution, and professional status. While most records contain essential details, some fields have missing values, particularly in the middle name, state, and preferred name columns.
+<img src="./Images/summary.png" style="width: 400px">
+
+The dataset presents a comprehensive view of CPA licensing trends across different regions, allowing for insights into license validity, geographical distribution, and professional status. While most records contain essential details, some fields have missing values, particularly in the middle name, state, and preferred name columns. This data set includes CPA licensed data from 1903 to 2025.
+
+<img src="./Images/trend.png" style="width: 400px">
 
 ## Motivation Statement
 
 The motivation behind analyzing this dataset is to gain insights into CPA licensing patterns, track active and lapsed licenses, and understand the geographical distribution of licensed professionals. By examining trends in licensing dates and statuses, stakeholders can identify regulatory compliance patterns, renewal frequencies, and potential areas of professional shortages or surpluses.
 
 This dataset can serve as a valuable resource for regulatory boards, professional associations, and researchers interested in workforce analytics, credential verification, and the broader impact of licensing regulations on the accounting profession. Understanding these patterns can help improve policy decisions, streamline licensing processes, and ensure better oversight of CPA professionals.
-
-
-<img src="./Images/trend.png" style="width: 400px">
 
 ## Code
 This repository contains two Malloy code files:
